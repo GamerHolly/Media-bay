@@ -115,6 +115,7 @@ button {
 }
 
 .header {
+
     background: #E8D4C9;
 }
 
@@ -137,7 +138,7 @@ button {
 
 .menu {
 
-    display: flex;
+
     margin-top: 35px;
 
     &__item {
@@ -222,8 +223,7 @@ button {
 
 .hero-image {
     margin-top: 63px;
-    width: 100%;
-    height: 100%;
+
 }
 
 .hero-image img {
@@ -437,10 +437,11 @@ button {
 .group {
     position: relative;
     margin-bottom: 33px;
-    
-    &:nth-child(1){
+
+    &:nth-child(1) {
         margin-top: 49px;
     }
+
     input {
         font-size: 18px;
         padding: 10px 10px 10px 5px;
@@ -534,18 +535,19 @@ input:focus~.bar:after {
         width: 12px;
         border: 1px solid #CBA696;
     }
-   
+
 }
 
-.checkbox .accept{
+.checkbox .accept {
     width: 389px;
 
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
 }
-.control-group label{
+
+.control-group label {
     font-size: 10px;
     font-family: $fontText;
     margin-left: 10px;
@@ -553,19 +555,20 @@ input[type="checkbox"]{
     line-height: 15px;
     cursor: pointer;
 
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #CBA696;
+        vertical-align: middle;
+        margin-left: -10px;
+        margin-right: 10px;
+        transition: 0.2s;
+    }
+
 }
-.control-group label::before{
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border: 1px solid #CBA696;
-    vertical-align: middle;
-    margin-left: -10px;
-    margin-right: 10px;
-    transition: 0.2s;
-}
-input[type="checkbox"]:checked + label::before{
+input[type="checkbox"]:checked+label::before {
     content: '';
     background: #CBA696;
     background-image: url('../img/tick.png');
@@ -574,45 +577,53 @@ input[type="checkbox"]:checked + label::before{
     background-repeat: no-repeat;
 }
 
-.form-button button{
+.form-button button {
     @include button($fz_button, $c_text, none, 140%, 10px 32px 10px 32px);
     border: 2px solid $bc_button;
     transition: 0.5s ease;
     margin-top: 25px;
+
     &:hover {
         background: $bc_button;
         color: $c_button;
     }
 }
-.footer{
+
+.footer {
     margin-top: 35px;
     background: #CBA696;
     height: 100%;
     width: 100%;
 }
 
-.footer-logo{
+.footer-logo {
     margin-top: 32px;
     margin-bottom: 23px;
 }
-.copyright{
+
+.copyright {
     font-size: 12px;
     margin-left: 132px;
     margin-top: 40px;
     width: 250px;
-    :nth-child(2){
+
+    :nth-child(2) {
         margin-top: 10px;
     }
 
 }
-.mediabay{
+
+.mediabay {
     font-size: 12px;
     margin-top: 40px;
-    a{
+
+    a {
         border-bottom: 1px solid $c_text;
     }
-    :nth-child(2){
+
+    :nth-child(2) {
         margin-top: 10px;
     }
 }
+
 @import "media";

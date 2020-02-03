@@ -1,25 +1,19 @@
 $(document).ready(function(){
     
-	new WOW().init();
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+	$(document).ready(function(){
+        $("div#1").click(function(){
+            $("div#2").toggle(); 
+        });
+        $("div#1").click(function(){
+            $("div#3").toggle(); 
+        });
+        $("div#1").click(function(){
+            $("div#4").toggle(); 
+        });
+        $("div#1").click(function(){
+            $("div#5").toggle(); 
+        });
     });
-    $('.switch-btn').click(function(){
-        $(this).toggleClass('switch-on');
-    });
-    
-    (function($) {  
-        $(function() {  
-          $('#up').click(function() {  
-            $('body,html').animate({scrollTop:0},800);  
-            return false;  
-          })  
-           
-        })  
-    })(jQuery)  
     
 });
 
