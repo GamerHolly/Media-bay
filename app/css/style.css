@@ -217,7 +217,7 @@ button {
   -o-transition: 0.5s ease;
   transition: 0.5s ease; }
   .main:hover {
-    border: 1px solid #CBA696;
+    border: 1px solid #987A6E;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-transform: scale(1.1);
@@ -225,7 +225,7 @@ button {
             transform: scale(1.1); }
   .main__text p {
     padding: 83px 0 30px 30px;
-    color: #987A6E; }
+    color: #CBA696; }
 
 .main-btn button {
   position: absolute;
@@ -248,7 +248,7 @@ button {
   display: block;
   margin-left: 50px;
   font-size: 24px;
-  color: #987A6E;
+  color: #CBA696;
   font-weight: bold;
   margin-top: 50px; }
 

@@ -7,10 +7,9 @@ $p_button: 17px 50px 17px 50px;
 $fz_button: 16px;
 $c_text: #403637;
 $b_body: #ffffff;
+$c: #987A6E;
+$c_in: #CBA696;
 $m_hero: 420px;
-$font: 'PlayfairDisplay',
-sans-serif;
-$fontBold: 'PlayfairDisplayBold'sans-serif;
 $fontText: 'Montserrat',
 sans-serif;
 
@@ -125,7 +124,7 @@ button {
         display: block;
         width: 100%;
         height: 2px;
-        background-color: #987A6E;
+        background-color: $c;
         transform: translateY(28px);
     }
 }
@@ -158,7 +157,7 @@ button {
     a::before {
         content: '';
         position: absolute;
-        @include border_menu(2px solid #987A6E, 0, width .5s ease-in-out, 0, 0);
+        @include border_menu(2px solid $c, 0, width .5s ease-in-out, 0, 0);
     }
 
     a:hover::before {
@@ -276,7 +275,7 @@ button {
     transition: 0.5s ease;
 
     &:hover {
-        border: 1px solid #CBA696;
+        border: 1px solid $c;
         box-sizing: border-box;
         transform: scale(1.1);
     }
@@ -285,7 +284,7 @@ button {
 
     &__text p {
         padding: 83px 0 30px 30px;
-        color: #987A6E;
+        color: #CBA696;
 
     }
 
@@ -310,7 +309,7 @@ button {
     display: block;
     margin-left: 50px;
     font-size: 24px;
-    color: #987A6E;
+    color: $c_in;
     font-weight: bold;
     margin-top: 50px;
 
@@ -366,7 +365,7 @@ button {
     }
 
     &:hover {
-        border-bottom: 2px solid #CBA696;
+        border-bottom: 2px solid $c_in;
     }
 }
 
@@ -405,7 +404,7 @@ button {
     margin-left: 141px;
 
     a {
-        border-bottom: 1px solid #CBA696;
+        border-bottom: 1px solid $c_in;
     }
 
 }
@@ -448,7 +447,7 @@ button {
         display: block;
         width: 300px;
         border: none;
-        border-bottom: 1px solid #CBA696;
+        border-bottom: 1px solid $c_in;
     }
 
     input:focus {
@@ -456,7 +455,7 @@ button {
     }
 
     label {
-        color: #CBA696;
+        color: $c_in;
         font-size: 12px;
         font-weight: normal;
         position: absolute;
@@ -533,7 +532,7 @@ input:focus~.bar:after {
         left: 0;
         height: 12px;
         width: 12px;
-        border: 1px solid #CBA696;
+        border: 1px solid $c_in;
     }
 
 }
@@ -560,7 +559,7 @@ input[type="checkbox"] {
         display: inline-block;
         width: 12px;
         height: 12px;
-        border: 1px solid #CBA696;
+        border: 1px solid $c_in;
         vertical-align: middle;
         margin-left: -10px;
         margin-right: 10px;
@@ -570,7 +569,7 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:checked+label::before {
     content: '';
-    background: #CBA696;
+    background: $c_in;
     background-image: url('../img/tick.png');
     background-size: 80%;
     background-position: center;
@@ -591,7 +590,7 @@ input[type="checkbox"]:checked+label::before {
 
 .footer {
     margin-top: 35px;
-    background: #CBA696;
+    background: $c_in;
     height: 100%;
     width: 100%;
 }
