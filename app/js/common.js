@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+    new WOW().init();
 	$(document).ready(function(){
         $("div#1").click(function(){
             $("div#2").toggle(); 
